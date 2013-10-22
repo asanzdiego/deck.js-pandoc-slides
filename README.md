@@ -1,0 +1,2 @@
+deck.js-pandoc-slides
+=====================
