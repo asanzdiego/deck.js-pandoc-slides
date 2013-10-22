@@ -1,5 +1,24 @@
-deck.js-pandoc-slides
-=====================
+% Deck.js & Pandoc
+% Adolfo Sanz De Diego
+% May 2013
+
+# About
+
+## Autor
+
+- **Adolfo Sanz De Diego**
+    - Mail: [asanzdiego@gmail.com](mailto:asanzdiego@gmail.com)
+    - Twitter: [@asanzdiego](http://twitter.com/asanzdiego)
+    - Linkedin: [http://www.linkedin.com/in/asanzdiego](http://www.linkedin.com/in/asanzdiego)
+    - Blog: [http://asanzdiego.blogspot.com.es](http://asanzdiego.blogspot.com.es)
+
+## Licence
+
+- **This work is licensed under a:**
+    - [Creative Commons Attribution 3.0](http://creativecommons.org/licenses/by-sa/3.0//)
+
+- **The program source code are licensed under a:**
+    - [GPL 3.0](http://www.gnu.org/licenses/gpl.html)
 
 # Instalation and how to use
 
