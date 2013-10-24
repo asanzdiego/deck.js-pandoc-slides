@@ -30,10 +30,10 @@ function initFolder() {
     echo -e "Ceating folder...        ../export"
     mkdir $FOLDER
   fi
-  
+
   echo -e "Coping css folder to...  ../export/css/"
   cp -r ./app/css $FOLDER
-  
+
   echo -e "Coping js folder to...   ../export/js/"
   cp -r ./app/js $FOLDER
 }
@@ -83,7 +83,7 @@ function exportMdFile() {
 
   buildSlides $1
   buildHtml $1
-  buildDocx $1
+  #buildDocx $1
   #buildPdf $1
   buildBeamer $1
 }
@@ -93,9 +93,9 @@ function processFolder() {
   echo -e "Procesing folder... \t "$1
 
   initFolder $1
-  
+
   cd $1"/md"
-  
+
   for FILE in *.md; do
 
     FILE_WITHOUT_EXTENSION=${FILE%%.*}
@@ -103,9 +103,9 @@ function processFolder() {
       exportMdFile $FILE_WITHOUT_EXTENSION
     fi
   done
-  
+
   cd - > /dev/null
-  
+
   echo -e "----------------------------------"
 }
 

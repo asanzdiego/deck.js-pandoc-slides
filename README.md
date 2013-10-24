@@ -1,6 +1,3 @@
-deck.js-pandoc-slides
-=====================
-
 # Instalation and how to use
 
 ## Dependencies
