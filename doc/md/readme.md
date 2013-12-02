@@ -92,11 +92,15 @@ if the general tweets feeling about a topic is positive or negative.
   go to the root folder and execute:
 
 ~~~
-   ./build.sh - To convert all md files of all the folders
+   ./build.sh
+
+   - To convert all md files of all the folders
 ~~~
 
 ~~~
-   ./build.sh [folder_name] - To convert all md files of one folder
+   ./build.sh [folder_name]
+
+   - To convert all md files of one folder
 ~~~
 
 ## Slide keyboard shortcuts
