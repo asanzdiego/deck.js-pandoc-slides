@@ -4,13 +4,60 @@
 
 # About
 
-## Autor
+## Adolfo Sanz De Diego
 
-- **Adolfo Sanz De Diego**
-    - Mail: [asanzdiego@gmail.com](mailto:asanzdiego@gmail.com)
-    - Twitter: [@asanzdiego](http://twitter.com/asanzdiego)
-    - Linkedin: [http://www.linkedin.com/in/asanzdiego](http://www.linkedin.com/in/asanzdiego)
-    - Blog: [http://asanzdiego.blogspot.com.es](http://asanzdiego.blogspot.com.es)
+![](../img/avatar-asanzdiego.png)
+
+## Mi CV resumido
+
+- **Old JEE web developer**
+
+- Today:
+
+    - **Computer teacher**:
+
+            - Hardware, Operating Systems, Networking, Programming
+
+    - **Freelance Trainer**:
+
+            - Java, Android
+            - JavaScript, jQuery
+            - JSF, Spring, Hibernate
+            - Groovy & Grails
+
+    - **I like to develop**
+
+## Hackalover
+
+![](../img/hackathon-lovers.png)
+
+- **For hackathons lovers**
+
+- **Meetup**: [http://www.meetup.com/Hackathon-Lovers/](http://www.meetup.com/Hackathon-Lovers/)
+
+- **Twitter**: [http://twitter.com/HackathonLovers](http://twitter.com/HackathonLovers)
+
+## Tweets Sentiment
+
+![](../img/tweets-sentiment-logo-grande.png)
+
+- Is a tweets analyzer which extracts semantic information to know
+if the general tweets feeling about a topic is positive or negative.
+
+- **Web**: [http://tweetssentiment.com/](http://tweetssentiment.com/)
+
+- **Twitter**: [http://twitter.com/TweetsSentiment](http://twitter.com/TweetsSentiment)
+
+## ¿Donde encontrarme?
+
+- My nick: **asanzdiego**
+
+- AboutMe: **[http://about.me/asanzdiego](http://about.me/asanzdiego)**
+
+    - GitHub:   [http://github.com/asanzdiego/](http://github.com/asanzdiego/)
+    - Twitter:  [http://twitter.com/asanzdiego](http://twitter.com/asanzdiego)
+    - Blog:     [http://asanzdiego.blogspot.com.es](http://asanzdiego.blogspot.com.es)
+    - LinkedIn: [http://www.linkedin.com/in/asanzdiego](http://www.linkedin.com/in/asanzdiego)
 
 ## Licence
 
@@ -37,11 +84,12 @@
   than plain text files with extension md, and a lightweight markup (we should
   know it but it is very simple).
 
-- Once created the md files, can generate docx, html, pdf, beamer and slides with a script.
+- Once created the md files, we can generate html, html-slides y pdf-beamer with a script.
 
 ## Build
 
-- To build docx, html, pdf, beamer and slides from md, go to the root folder and execute:
+- To build html, slides in html or slides in pdf-beamer from md,
+  go to the root folder and execute:
 
 ~~~
    ./build.sh - To convert all md files of all the folders
