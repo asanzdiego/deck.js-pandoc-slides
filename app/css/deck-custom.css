@@ -1,0 +1,22 @@
+figcaption {
+  display: none;
+  visibility:hidden;
+}
+
+#titlepage, #documentauthor, #documentdate {
+  text-align: center;
+}
+
+#titlepage {
+  font-size: 5.25em;
+  padding-top: 15%;
+}
+
+#documentauthor {
+  font-size: 2.25em;
+}
+
+#documentdate {
+  font-size: 1.25em;
+}
+
