@@ -93,11 +93,15 @@ es positivo o negativo.
   hay que posicionarse en la carpeta raiz, y ejecutar:
 
 ~~~
-   ./build.sh - Para convertir todos los ficheros md de todas las carpetas
+   ./build.sh
+
+   - Para convertir todos los ficheros md de todas las carpetas
 ~~~
 
 ~~~
-   ./build.sh [nombre_de_carpeta] - Para convertir todos los ficheros md de una carpeta
+   ./build.sh [nombre_de_carpeta]
+
+   - Para convertir todos los ficheros md de una carpeta
 ~~~
 
 ## Atajos de teclado de las transparencias
