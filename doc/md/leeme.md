@@ -4,13 +4,61 @@
 
 # Acerca de
 
-## Author
+## Adolfo Sanz De Diego
 
-- **Adolfo Sanz De Diego**
-    - Correo: [asanzdiego@gmail.com](mailto:asanzdiego@gmail.com)
-    - Twitter: [@asanzdiego](http://twitter.com/asanzdiego)
-    - Linkedin: [http://www.linkedin.com/in/asanzdiego](http://www.linkedin.com/in/asanzdiego)
-    - Blog: [http://asanzdiego.blogspot.com.es](http://asanzdiego.blogspot.com.es)
+![](../img/avatar-asanzdiego.png)
+
+## Mi CV resumido
+
+- **Antiguo programador web JEE**
+
+- Hoy en día:
+
+    - **Profesor de FP de informática**:
+
+            - Hardware, Sistemas Operativos, Redes, Programación
+
+    - **Formador Freelance**:
+
+            - Java, Android
+            - JavaScript, jQuery
+            - JSF, Spring, Hibernate
+            - Groovy & Grails
+
+    - **Me gusta programar**
+
+## Hackalover
+
+![](../img/hackathon-lovers.png)
+
+- **Para los amantes de los hackathones**
+
+- **Meetup**: [http://www.meetup.com/Hackathon-Lovers/](http://www.meetup.com/Hackathon-Lovers/)
+
+- **Twitter**: [http://twitter.com/HackathonLovers](http://twitter.com/HackathonLovers)
+
+## Tweets Sentiment
+
+![](../img/tweets-sentiment-logo-grande.png)
+
+- Es un analizador de tweets que extrae información semántica para conocer
+si el sentimiento general de los tweets de un determinado tema
+es positivo o negativo.
+
+- **Web**: [http://tweetssentiment.com/](http://tweetssentiment.com/)
+
+- **Twitter**: [http://twitter.com/TweetsSentiment](http://twitter.com/TweetsSentiment)
+
+## ¿Donde encontrarme?
+
+- Mi nick: **asanzdiego**
+
+- AboutMe: **[http://about.me/asanzdiego](http://about.me/asanzdiego)**
+
+    - GitHub:   [http://github.com/asanzdiego/](http://github.com/asanzdiego/)
+    - Twitter:  [http://twitter.com/asanzdiego](http://twitter.com/asanzdiego)
+    - Blog:     [http://asanzdiego.blogspot.com.es](http://asanzdiego.blogspot.com.es)
+    - LinkedIn: [http://www.linkedin.com/in/asanzdiego](http://www.linkedin.com/in/asanzdiego)
 
 ## Licencia
 
@@ -37,11 +85,11 @@
   ficheros de texto plano, con extensión md, y con un marcado ligero (que hay
   que conocer pero que es muy sencillo).
 
-- Una vez creado los md, puedes general docx, html, pdf, beamer y slides con un script.
+- Una vez creado los md, puedes generar html, html-slides y pdf-beamer con un script.
 
 ## Generación
 
-- Para generar el docx, el html, el pdf, el beamer y las slides desde los md,
+- Para generar el html, las slides en html y las slides en pdf-beamer desde los md,
   hay que posicionarse en la carpeta raiz, y ejecutar:
 
 ~~~
