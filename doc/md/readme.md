@@ -29,7 +29,7 @@
 
 ## Hackalover
 
-![](../img/hackathon-lovers.png)
+![](../img/hackathon-lovers-logo.png)
 
 - **For hackathons lovers**
 
@@ -39,9 +39,9 @@
 
 ## Tweets Sentiment
 
-![](../img/tweets-sentiment-logo-grande.png)
+![](../img/tweets-sentiment-logo.png)
 
-- Is a tweets analyzer which extracts semantic information to know
+- Is a **tweets analyzer** which extracts semantic information to know
 if the general tweets feeling about a topic is positive or negative.
 
 - **Web**: [http://tweetssentiment.com/](http://tweetssentiment.com/)
@@ -76,31 +76,30 @@ if the general tweets feeling about a topic is positive or negative.
 
 ## Creation
 
-- First copy the doc folder and rename it as you like. This is not necessary but
+- First **copy the doc folder and rename it as you like**. This is not necessary but
   helps you organize your documents.
 
-- Create the md files that you want to generate. The md files are
+- **Create the md files** that you want to generate. The md files are
   [Markdown](http://en.wikipedia.org/wiki/Markdown) files which are nothing more
   than plain text files with extension md, and a lightweight markup (we should
   know it but it is very simple).
 
-- Once created the md files, we can generate html, html-slides y pdf-beamer with a script.
+- Once created the md files, we can **generate html, html-slides y pdf-beamer with a script**.
 
 ## Build
 
-- To build html, slides in html or slides in pdf-beamer from md,
+- To **convert all md files of all the folders**
   go to the root folder and execute:
 
 ~~~
    ./build.sh
-
-   - To convert all md files of all the folders
 ~~~
+
+- To **convert all md files of one folder**
+  go to the root folder and execute:
 
 ~~~
    ./build.sh [folder_name]
-
-   - To convert all md files of one folder
 ~~~
 
 ## Slide keyboard shortcuts

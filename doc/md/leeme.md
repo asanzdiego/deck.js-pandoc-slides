@@ -29,7 +29,7 @@
 
 ## Hackalover
 
-![](../img/hackathon-lovers.png)
+![](../img/hackathon-lovers-logo.png)
 
 - **Para los amantes de los hackathones**
 
@@ -39,9 +39,9 @@
 
 ## Tweets Sentiment
 
-![](../img/tweets-sentiment-logo-grande.png)
+![](../img/tweets-sentiment-logo.png)
 
-- Es un analizador de tweets que extrae información semántica para conocer
+- Es un **analizador de tweets** que extrae información semántica para conocer
 si el sentimiento general de los tweets de un determinado tema
 es positivo o negativo.
 
@@ -77,31 +77,30 @@ es positivo o negativo.
 
 ## Creación
 
-- Primero copia la carpeta doc y renombrala a tu gusto. Esto no es necesario pero
+- Primero **copia la carpeta doc y renombrala a tu gusto**. Esto no es necesario pero
   te ayuda a organizar tus documentos.
 
-- Crea los ficheros md que quieras generar. Los ficheros md son ficheros
+- **Crea los ficheros md** que quieras generar. Los ficheros md son ficheros
   [Markdown](http://es.wikipedia.org/wiki/Markdown), que no son nada más que
   ficheros de texto plano, con extensión md, y con un marcado ligero (que hay
   que conocer pero que es muy sencillo).
 
-- Una vez creado los md, puedes generar html, html-slides y pdf-beamer con un script.
+- Una vez creado los md, puedes **generar html, html-slides y pdf-beamer con un script**.
 
 ## Generación
 
-- Para generar el html, las slides en html y las slides en pdf-beamer desde los md,
+- Para **convertir todos los ficheros md de todas las carpetas**
   hay que posicionarse en la carpeta raiz, y ejecutar:
 
 ~~~
    ./build.sh
-
-   - Para convertir todos los ficheros md de todas las carpetas
 ~~~
+
+- Para **convertir todos los ficheros md de una carpeta**
+  hay que posicionarse en la carpeta raiz, y ejecutar:
 
 ~~~
    ./build.sh [nombre_de_carpeta]
-
-   - Para convertir todos los ficheros md de una carpeta
 ~~~
 
 ## Atajos de teclado de las transparencias
