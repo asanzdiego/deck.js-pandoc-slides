@@ -8,7 +8,7 @@
 
 ![](../img/avatar-asanzdiego.png)
 
-## Mi CV resumido
+## My Resume
 
 - **Old JEE web developer**
 
@@ -48,7 +48,7 @@ if the general tweets feeling about a topic is positive or negative.
 
 - **Twitter**: [http://twitter.com/TweetsSentiment](http://twitter.com/TweetsSentiment)
 
-## ¿Donde encontrarme?
+## Where to find me?
 
 - My nick: **asanzdiego**
 
