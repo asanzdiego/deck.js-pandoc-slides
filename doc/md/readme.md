@@ -71,7 +71,7 @@ if the general tweets feeling about a topic is positive or negative.
 
 ## Dependencies
 
-- [Pandoc 1.11.1](http://johnmacfarlane.net/pandoc/) (needs to be installed)
+- [Pandoc](http://johnmacfarlane.net/pandoc/) (needs to be installed)
 - [Deck.js](http://imakewebthings.com/deck.js/) (included)
 
 ## Creation
@@ -108,7 +108,6 @@ if the general tweets feeling about a topic is positive or negative.
                     [F] - Find text
                     [M] - Miniature slides
                     [G] - Go to slide number
-                    [P] - Pointer mouse
              [ctrl]+[+] - Zoom in
              [ctrl]+[-] - Zoom out
    [ctrl]+[wheel mouse] - Zoom in/out
