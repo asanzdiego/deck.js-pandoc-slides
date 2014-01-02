@@ -72,7 +72,7 @@ es positivo o negativo.
 
 ## Dependencias
 
-- [Pandoc 1.11.1](http://johnmacfarlane.net/pandoc/) (necesita ser instalado)
+- [Pandoc](http://johnmacfarlane.net/pandoc/) (necesita ser instalado)
 - [Deck.js](http://imakewebthings.com/deck.js/) (incluido)
 
 ## Creación
@@ -109,7 +109,6 @@ es positivo o negativo.
                         [F] - Buscar texto
                         [M] - Transparencias en miniatura
                         [G] - Ir a la transparencia número
-                        [P] - Mostrar un puntero laser
                  [ctrl]+[+] - Zoom in
                  [ctrl]+[-] - Zoom out
    [ctrl]+[rueda del ratón] - Zoom in/out
@@ -123,4 +122,3 @@ es positivo o negativo.
              [flecha abajo] - Página anterio
          [flecha izquierda] - Página anterior
 ~~~
-

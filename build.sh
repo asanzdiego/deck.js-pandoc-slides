@@ -1,9 +1,45 @@
 #! /bin/bash
 
+clear
 ORIGIN=`pwd`
-echo $ORIGIN
+echo -e $ORIGIN
 
-function initFolder() {
+function downloadLib() {
+
+  LIB_FOLDER="../lib"
+
+  if [ -e $LIB_FOLDER ]; then
+    if [ ! -d $LIB_FOLDER ]; then
+      echo "ERROR: $LIB_FOLDER exists and is not a folder"
+      exit -1
+    fi
+  else
+    mkdir $LIB_FOLDER
+  fi
+
+  GIT_USER=$1
+  GIT_PROJECT=$2
+  DOWNLOAD_FOLDER="$LIB_FOLDER/$GIT_PROJECT-master"
+  ZIP_FILE="$LIB_FOLDER/$GIT_PROJECT.zip"
+
+  if [ -e $DOWNLOAD_FOLDER ]; then
+
+    if [ ! -d $DOWNLOAD_FOLDER ]; then
+      echo "ERROR: $DOWNLOAD_FOLDER exists and is not a folder"
+      exit -1
+    fi
+
+  else
+
+    echo -e "Downloading...                 from https://github.com/$GIT_USER/$GIT_PROJECT"
+    wget -q -O $LIB_FOLDER/$GIT_PROJECT.zip https://github.com/$GIT_USER/$GIT_PROJECT/archive/master.zip
+
+    echo -e "Extracting...                  $ZIP_FILE"
+    unzip -q -d $LIB_FOLDER $ZIP_FILE
+  fi
+}
+
+function initExportFolder() {
 
   FOLDER=$1"/export"
 
@@ -12,87 +48,68 @@ function initFolder() {
     if [ -d $FOLDER ]; then
 
       if [ ! -w $FOLDER ]; then
-
-          echo "ERROR: no write permision in $FOLDER"
+          echo -e "ERROR: no write permision in $FOLDER"
           exit -1
       fi
-      echo -e "Cleaning folder...       ../export"
+
+      echo -e "Cleaning folder...             ../export"
       rm -R $FOLDER
       mkdir $FOLDER
-    else
 
-      echo "ERROR: $FOLDER exists and is not a folder"
+    else
+      echo -e "ERROR: $FOLDER exists and is not a folder"
       exit -1
     fi
 
   else
 
-    echo -e "Ceating folder...        ../export"
+    echo -e "Ceating folder...            ../export"
     mkdir $FOLDER
   fi
 
-  echo -e "Coping css folder to...  ../export/css/"
-  cp -r ./app/css $FOLDER
-
-  echo -e "Coping js folder to...   ../export/js/"
-  cp -r ./app/js $FOLDER
 }
 
-function buildSlides() {
+function buildDeck() {
 
-  echo -e "Exporting...             ../export/$1.slides.html"
+  downloadLib imakewebthings deck.js
+  downloadLib markahon deck.search.js
+  downloadLib mikeharris100 deck.js-transition-cube
 
-  pandoc -w dzslides --template $ORIGIN/app/templates/slides-template.html --number-sections --email-obfuscation=none -o ../export/$1.slides.html $1.md
+  echo -e "Exporting...                   ../export/$1.deck.slides.html"
 
-  sed -i s/h1\>/h2\>/g ../export/$1.slides.html
+  pandoc -w dzslides --template $ORIGIN/templates/deck-slides-template.html --number-sections --email-obfuscation=none -o ../export/$1.deck.slides.html $1.md
 
-  sed -i s/\>\<h2/\>\<h1/g ../export/$1.slides.html
-
-  sed -i s/\\/h2\>\</\\/h1\>\</g ../export/$1.slides.html
+  sed -i s/h1\>/h2\>/g ../export/$1.deck.slides.html
+  sed -i s/\>\<h2/\>\<h1/g ../export/$1.deck.slides.html
+  sed -i s/\\/h2\>\</\\/h1\>\</g ../export/$1.deck.slides.html
 }
 
 function buildHtml() {
 
-  echo -e "Exporting...             ../export/$1.html"
+  echo -e "Exporting...                   ../export/$1.html"
 
-  pandoc -w html5 --template $ORIGIN/app/templates/html5-template.html --number-sections --email-obfuscation=none --toc --highlight-style=tango -o ../export/$1.html $1.md
-}
-
-function buildDocx() {
-
-  echo -e "Exporting...             ../export/$1.docx"
-
-  pandoc -w docx --number-sections --table-of-contents --chapters -o ../export/$1.docx $1.md
-}
-
-function buildPdf() {
-
-  echo -e "Exporting...             ../export/$1.pdf"
-
-  sed '/.gif/d' $1.md | pandoc --number-sections --table-of-contents --chapters -o ../export/$1.pdf
+  pandoc -w html5 --template $ORIGIN/templates/html5-template.html --number-sections --email-obfuscation=none --toc --highlight-style=tango -o ../export/$1.html $1.md
 }
 
 function buildBeamer() {
 
-  echo -e "Exporting...             ../export/$1.beamer.pdf"
+  echo -e "Exporting...                   ../export/$1.beamer.pdf"
 
   sed '/.gif/d' $1.md | pandoc -w beamer --number-sections --table-of-contents --chapters -V fontsize=9pt -V theme=Warsaw -o ../export/$1.beamer.pdf
 }
 
 function exportMdFile() {
 
-  buildSlides $1
+  buildDeck $1
   buildHtml $1
-  #buildDocx $1
-  #buildPdf $1
   buildBeamer $1
 }
 
 function processFolder() {
 
-  echo -e "Procesing folder... \t "$1
+  echo -e "Procesing folder...            ../"$1
 
-  initFolder $1
+  initExportFolder $1
 
   cd $1"/md"
 
@@ -106,15 +123,15 @@ function processFolder() {
 
   cd - > /dev/null
 
-  echo -e "----------------------------------"
+  echo -e "-------------------------------"
 }
 
 function processFolders() {
 
   for PROJECT in */; do
 
-    if [ -d $PROJECT -a "$PROJECT" != "app/" ]; then
-      processFolder $PROJECT  
+    if [ -d $PROJECT -a "$PROJECT" != "templates/" -a "$PROJECT" != "lib/" ]; then
+      processFolder $PROJECT
     fi
   done
 }
